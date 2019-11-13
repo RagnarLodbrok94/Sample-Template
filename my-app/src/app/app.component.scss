@@ -1,0 +1,15 @@
+.section {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	padding: 4% 0;
+	background: #b2edff
+}
+
+.container {
+	width: 100%;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
