@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class SuccessComponent {
-	title: string= 'This  is Success component!';
+	title: string = 'This  is Success component!';
 }
