@@ -1,1 +1,2 @@
-<h1 class="success">{{title}}</h1>
+<h1 *ngIf="switch" class="success">{{title}}</h1>
+<button (click)="handleClick()" class='btn'>{{text}}</button>

@@ -1,6 +1,27 @@
 <div class="section">
   <div class='container'>
-    <app-success></app-success>
-    <app-warning></app-warning>
+    <div class="row">
+      <div class="col-6">
+          <h1>App component<br>{{ title }}</h1>
+          <hr>
+          <app-title [title]="title"></app-title>
+          <hr><br>
+          <input type="text" [(ngModel)]="title">
+      </div>
+      <div class="col-6">
+        <h1>{{ counter }}</h1>
+        <div>
+          <button (click)="start()">Start</button>
+          <button (click)="pause()">Pause</button>
+          <app-message [switch]="switch" (onClick)='assignment($event)'></app-message>
+          <div *ngIf="show">
+            <app-ivan></app-ivan>
+          </div> 
+        </div>
+      </div>
+      <div class="col-12">
+        <app-todo></app-todo>
+      </div>
+    </div>
   </div>
 </div>

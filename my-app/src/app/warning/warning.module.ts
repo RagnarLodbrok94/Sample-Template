@@ -8,11 +8,11 @@ import { BadgeComponent } from './badge/badge.component';
 		WarningComponent,
 		BadgeComponent
 	],
-	import: [
+	imports: [ 
 		CommonModule
 	],
 	exports: [
-		WarningComponent
+		WarningComponent 
 	]
 })
 export class WarningModule { }

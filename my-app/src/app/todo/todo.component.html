@@ -1,0 +1,21 @@
+<br><br><hr><br>
+<h3>Todo List. Click checkbox or delete</h3>
+<form class='todo-form' (submit)="create($event, textInput.value); textInput.value = ''">
+    <input type="text"  placeholder='Новая задача' #textInput>
+    <button type='submit'>Добавить</button>
+</form>
+<ul class="todo-list" *ngIf='todos.length'>
+    <li class="todo-list-item" *ngFor='let todo of todos' [class.completed]='todo.completed'>
+        <div class='todo-list-item-left'>
+            <button class='todo-list-item-checkbox todo-list-item-icon' (click)='toggle(todo)'>
+                <span class='material-icons'>{{ todo.completed ? 'check_box' : 'check_box_outline_blank' }}</span>
+            </button>
+            <div class="todo-list-item-title">{{ todo.title }}</div>
+        </div>
+        <div class='todo-list-item-left'>
+            <button class='todo-list-item-delete todo-list-item-icon' (click)='delete(todo)'>
+                <span class='material-icons'>delete</span>
+            </button>
+        </div>
+    </li>
+</ul>
