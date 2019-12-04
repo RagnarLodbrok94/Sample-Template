@@ -1,0 +1,12 @@
+<h1>{{ counter }}</h1>
+<br>
+<div>
+  <button (click)="start()">Start</button>
+  <button (click)="pause()">Pause</button>
+</div>
+<br>
+<br>
+<app-message [switch]="switch" (onClick)='assignment($event)'></app-message>
+<div *ngIf="show">
+  <app-ivan></app-ivan>
+</div> 

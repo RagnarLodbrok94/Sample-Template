@@ -1,0 +1,13 @@
+.todo-list {
+    margin-top: 3%;
+    border: 1px solid;
+}
+
+app-todo-item {
+  display: block;
+  border-bottom: 1px solid;
+
+  &:last-child {
+    border-bottom-color: transparent;
+  }
+}

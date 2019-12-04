@@ -1,27 +1,30 @@
 <div class="section">
   <div class='container'>
-    <div class="row">
+    <h1>Navigation</h1>
+    <nav class='nav'>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class='nav-link' routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Todo</a>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link' routerLink="/task1" routerLinkActive="active">Task1</a>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link' routerLink="/task2" routerLinkActive="active">Task2</a>
+        </li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+    <!-- <div class="row">
       <div class="col-6">
-          <h1>App component<br>{{ title }}</h1>
-          <hr>
-          <app-title [title]="title"></app-title>
-          <hr><br>
-          <input type="text" [(ngModel)]="title">
+        <app-task4></app-task4>
       </div>
       <div class="col-6">
-        <h1>{{ counter }}</h1>
-        <div>
-          <button (click)="start()">Start</button>
-          <button (click)="pause()">Pause</button>
-          <app-message [switch]="switch" (onClick)='assignment($event)'></app-message>
-          <div *ngIf="show">
-            <app-ivan></app-ivan>
-          </div> 
-        </div>
+        <app-task3></app-task3>
       </div>
       <div class="col-12">
         <app-todo></app-todo>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
