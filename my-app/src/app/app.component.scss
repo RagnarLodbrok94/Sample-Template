@@ -68,6 +68,15 @@
 		transition: .3s;
 	}
 
+	&:focus {
+		outline: none;
+	}
+
+	&,
+	&:active {
+		color: #2929f3;
+	}
+
 	&.active,
 	&:hover {
 		&::before {

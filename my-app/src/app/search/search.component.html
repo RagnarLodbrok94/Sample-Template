@@ -1,0 +1,24 @@
+<h1>User Name</h1>
+<br>
+<div>
+  <input type="text" [(ngModel)]="userName">
+  <button (click)="search()">Ввести</button>
+</div>
+<br>
+<div *ngIf="response">
+  <div class="user">
+    <div class="user-image">
+      <img src="{{ response.avatar_url }}" alt="">
+    </div>
+    <div class="user-info">
+      <b>Имя:</b> {{ response.login }}
+    </div>
+    <div class="user-info">
+      <b>Репозитории:</b> {{ response.public_repos }}
+    </div>
+    <div class="user-info">
+      <b>Биография:</b> {{ response.bio }}
+    </div>
+
+  </div>
+</div>
